@@ -1,0 +1,15 @@
+.link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 2px;
+  transition: all 0.25s;
+  margin-right: 0.5rem;
+  &:hover {
+    background-color: #ffffff2b;
+  }
+  @media (max-width: 556px) {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

@@ -1,0 +1,274 @@
+.landing {
+  height: 100vh;
+  position: relative;
+  padding-top: 6rem;
+  background: var(--primary-color);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  .container {
+    max-width: 1060px;
+    display: flex;
+    align-items: center;
+    height: 75%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    .textContainer {
+      color: var(--main-white);
+      width: 60%;
+      opacity: 0;
+      animation: fade-in-right 1.25s;
+      animation-delay: .5s;
+      animation-fill-mode: forwards;
+      .introText {
+        display: block;
+        font-size: 2.4rem;
+      }
+      .nameText {
+        font-size: 4rem;
+      }
+      .subtext {
+        font-weight: 200;
+        opacity: 0.7;
+        flex-wrap: wrap;
+      }
+      .aboutMeBlurb {
+        margin-top: 1.2rem;
+        line-height: 2.5rem;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        .descriptorBox {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          height: 2rem;
+          width: 10rem;
+          padding: 2px 10px;
+          background-color: var(--main-white);
+          transition: all 1s;
+          position: relative;
+          margin: 0 0.5rem;
+          .descriptor {
+            position: absolute;
+            display: inline-block;
+            color: var(--primary-color);
+            &.show {
+              opacity: 1;
+              animation: fade-in-upwards 1s;
+            }
+            &.hide {
+              opacity: 0;
+              animation: fade-out-upwards 1s;
+            }
+          }
+        }
+      }
+      .linksContainer {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        .line {
+          margin: 0 1.2rem;
+          display: inline-block;
+          height: 2px;
+          width: 52px;
+          background: var(--main-white);
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          lottie-player {
+            &:not(:last-child) {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+      @media (max-width: 960px) {
+        .introText {
+          display: block;
+          font-size: 2rem;
+        }
+        .nameText {
+          font-size: 3.6rem;
+        }
+        .aboutMeBlurb {
+          font-size: 1.2rem;
+          .descriptorBox {
+            height: 2rem;
+            width: 8rem;
+          }
+        }
+      }
+    }
+    .imageContainer {
+      position: relative;
+      display: flex;
+      width: 40%;
+      justify-content: center;
+      opacity: 0;
+      animation: fade-in-left 1.25s;
+      animation-delay: .5s;
+      animation-fill-mode: forwards;
+      .imagesGroup {
+        position: relative;
+        img {
+          height: 23rem;
+          z-index: 1;
+          border-radius: 4px;
+          position: relative;
+          transition: 0.5s all;
+        }
+        .mePicShadow {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          background: #f39f9f;
+          top: 1rem;
+          left: 1.4rem;
+          border-radius: 4px;
+          transition: 0.5s all;
+        }
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+          .mePicShadow {
+            transform: scale(1.025);
+          }
+        }
+      }
+    }
+  }
+  .wavyDivider {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    .wavyDividerDesktop {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 147px;
+    }
+    .wavyDividerTablet {
+      display: none;
+      height: 103px;
+    }
+    .wavyDividerMobile {
+      display: none;
+      height: 63px;
+    }
+    .shapeFill {
+      fill: var(--main-white);
+    }
+  }
+  @media (max-width: 860px) {
+    height: auto;
+    .container {
+      flex-direction: column;
+      padding: 0 3rem 7rem 3rem;
+      .textContainer {
+        width: 100%;
+        order: 2;
+        margin-top: 4rem;
+        .aboutMeBlurb {
+          margin-top: 0.5rem;
+        }
+        .linksContainer {
+          margin-top: 2rem;
+        }
+      }
+      .imageContainer {
+        margin-top: 3rem;
+        .imagesGroup {
+          img {
+            height: 18rem;
+          }
+        }
+      }
+    }
+    .wavyDivider {
+      .wavyDividerDesktop {
+        display: none;
+      }
+      .wavyDividerTablet {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 604px) {
+    .container {
+      .textContainer {
+        .nameText {
+          font-size: 4rem;
+          font-size: 3.2rem;
+        }
+      }
+    }
+    .wavyDivider {
+      .wavyDividerTablet {
+        display: none;
+      }
+      .wavyDividerMobile {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 380px) {
+    .container {
+      padding: 0 1.2rem 7rem 1.2rem;
+    }
+  }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }   
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }   
+}
+
+@keyframes fade-out-upwards {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes fade-in-upwards {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

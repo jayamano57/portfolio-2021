@@ -1,0 +1,161 @@
+.project {
+  display: flex;
+  max-width: 980px;
+  width: 90%;
+  padding: 4rem 2rem;
+  padding-right: 0;
+  position: relative;
+  border-radius: 7px;
+  color: var(--main-white);
+  box-shadow: 0 1px 9px 3px #bdbdbd;
+  @media (max-width: 940px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  @media (max-width: 766px) {
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+  @media (max-width: 940px) {
+    padding-bottom: 20rem;
+  }
+  @media (max-width: 556px) {
+    padding-bottom: 12rem;
+  }
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+    @media (max-width: 940px) {
+      margin-bottom: 3rem;
+    }
+  }
+  .projectInfo {
+    letter-spacing: 1px;
+    line-height: 26px;
+    .projectLogo {
+      height: 6rem;
+      @media (max-width: 766px) {
+        height: auto;
+        max-width: 65%;
+      }
+    }
+    .projectDescription {
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      max-width: 400px;
+      letter-spacing: 3px;
+      padding-right: 2rem;
+      @media (max-width: 940px) {
+        max-width: 530px;
+        width: 100%;
+      }
+      @media (max-width: 766px) {
+        padding-right: 0;
+      }
+      @media (max-width: 766px) {
+        margin-top: 1rem;
+      }
+      @media (max-width: 556px) {
+        font-size: 0.8rem;
+        line-height: initial;
+        letter-spacing: 2px;
+      }
+    }
+    .projectTechnologies {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      .technology {
+        padding: 0.2rem 0.5rem;
+        background-color: #2121212e;
+        border-radius: 2px;
+        margin-bottom: 0.4rem;
+        &:not(:last-child) {
+          margin-right: 0.4rem;
+        }
+        @media (max-width: 556px) {
+          padding: 0 0.4rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .projectLinks {
+      margin-top: 4rem;
+      @media (max-width: 940px) {
+        margin-top: 3rem;
+      }
+      @media (max-width: 766px) {
+        margin-top: 1.2rem;
+      }
+    }
+  }
+  .mockupContainer {
+    transform: translateZ(30px);
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    padding-top: 2rem;
+    @media (max-width: 940px) {
+      padding-top: 0rem;
+    }
+    &.mobile {
+      // bottom: 0;
+      @media (max-width: 940px) {
+        // margin-top: 0;
+      }
+    }
+    &.mockup {
+      @media (max-width: 766px) {
+        // bottom: 0;
+      }
+    }
+    .projectMockupDesktop {
+      height: 23rem;
+      position: relative;
+      right: -7rem;
+      bottom: 2rem;
+      @media (max-width: 1024px) {
+        height: 19rem;
+        right: -5rem;
+      }
+      @media (max-width: 940px) {
+        height: 25rem;
+        bottom: -7rem;
+        right: -8rem;
+      }
+      @media (max-width: 766px) {
+        height: 21rem;
+        bottom: -6rem;
+        right: -5rem;
+      }
+      @media (max-width: 556px) {
+        height: 14rem;
+        bottom: -5rem;
+        right: -5rem;
+      }
+    }
+    .projectMockupMobile {
+      height: 30rem;
+      position: relative;
+      right: 1rem;
+      bottom: -5rem;
+      // @media (max-width: 1024px) {
+      //     height: 25rem;
+      //     bottom: -4rem;
+      // }
+      @media (max-width: 940px) {
+        height: 38rem;
+        bottom: -19rem;
+      }
+      @media (max-width: 556px) {
+        height: 33rem;
+        bottom: -23rem;
+      }
+      @media (max-width: 420px) {
+        height: 28rem;
+        bottom: -19rem;
+      }
+    }
+  }
+}
