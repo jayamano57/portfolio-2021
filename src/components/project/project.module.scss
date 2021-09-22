@@ -96,6 +96,7 @@
     right: 0;
     bottom: 0rem;
     padding-top: 2rem;
+    pointer-events: none;
     @media (max-width: 940px) {
       padding-top: 0rem;
     }
