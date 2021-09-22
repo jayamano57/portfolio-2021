@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio-2021/static/css/main.e55b9632.chunk.css",
+    "main.js": "/portfolio-2021/static/js/main.4c439eb6.chunk.js",
+    "main.js.map": "/portfolio-2021/static/js/main.4c439eb6.chunk.js.map",
+    "runtime-main.js": "/portfolio-2021/static/js/runtime-main.04693ae7.js",
+    "runtime-main.js.map": "/portfolio-2021/static/js/runtime-main.04693ae7.js.map",
+    "static/js/2.3879a549.chunk.js": "/portfolio-2021/static/js/2.3879a549.chunk.js",
+    "static/js/2.3879a549.chunk.js.map": "/portfolio-2021/static/js/2.3879a549.chunk.js.map",
+    "static/js/3.4518f991.chunk.js": "/portfolio-2021/static/js/3.4518f991.chunk.js",
+    "static/js/3.4518f991.chunk.js.map": "/portfolio-2021/static/js/3.4518f991.chunk.js.map",
+    "index.html": "/portfolio-2021/index.html",
+    "static/css/main.e55b9632.chunk.css.map": "/portfolio-2021/static/css/main.e55b9632.chunk.css.map",
+    "static/js/2.3879a549.chunk.js.LICENSE.txt": "/portfolio-2021/static/js/2.3879a549.chunk.js.LICENSE.txt",
+    "static/media/7up-logo.18acadc2.webp": "/portfolio-2021/static/media/7up-logo.18acadc2.webp",
+    "static/media/Foodr.bfbf868f.svg": "/portfolio-2021/static/media/Foodr.bfbf868f.svg",
+    "static/media/Jay-Resume-2021.c03608a1.pdf": "/portfolio-2021/static/media/Jay-Resume-2021.c03608a1.pdf",
+    "static/media/foodr-mockup.1d92a31a.png": "/portfolio-2021/static/media/foodr-mockup.1d92a31a.png",
+    "static/media/jay-profile-color.1de0ba66.jpg": "/portfolio-2021/static/media/jay-profile-color.1de0ba66.jpg",
+    "static/media/mc-logo-white.d46d9c2a.svg": "/portfolio-2021/static/media/mc-logo-white.d46d9c2a.svg",
+    "static/media/mc-personalization-mockup.cdfcf51b.png": "/portfolio-2021/static/media/mc-personalization-mockup.cdfcf51b.png",
+    "static/media/sevenup-mockup.43ae5d13.png": "/portfolio-2021/static/media/sevenup-mockup.43ae5d13.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04693ae7.js",
+    "static/js/2.3879a549.chunk.js",
+    "static/css/main.e55b9632.chunk.css",
+    "static/js/main.4c439eb6.chunk.js"
+  ]
+}
